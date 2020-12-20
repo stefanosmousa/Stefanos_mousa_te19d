@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> En complett guide till html</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <img class="navbar-brand" src="bild1.png" height="100px"></img>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#element">element</a>
+        </li>
+
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#HTML">HTML</a>
+        </li>
+
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#ID">ID</a>
+        </li>
+
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#class">class</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#meta"><meta></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#responsive">responsive</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#http">http</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#https">https</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#compressed data">compressed data</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="#cdn">CDN</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#local bootstrap">local bootstrap</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#JQuery">JQuery</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#flexbox">flexbox</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#grid">grid</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#code snippets">code snippets</a>
+        </li>
+</nav>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex6">
+        <h1 id="element">element</h1>
+    </div>
+<div class=".container">
+    <div class="row justify-content-center text-align-center container-flex6">
+        <p>Ett element är roten i ett HTML dokument, detta kallas även rotelement, alla andra element som kommer med i coden måste vara efterkommande till den. 
+        Det första elementet som är det som kallas rotelementet är < html > elementet. Detta är huvudet för en html kod och alla hemsidor börjar med detta elementet. 
+        Efter html kommer < base > elementet. Base elementet förtydligar bas URLn för alla relativa URL i ett dokument. Ett base element är inget måste.
+        Det andra "måste" elementet är head < head > elementet. I head elementet så hittar programmet information om dokumentet, som t.ex vilka style sheets som finns med, vilken titel och vilka skripts som är med.
+        Det 3e elementet som är bra att ha men inte är ett måste är ett link < link > element. Här kan du skriva in t.ex vart du vill att ditt dokument ska vara kopplat som, t.ex i detta fallet bootstrap eller en .css fil.
+        På plats nummer 4 kommer style < style > elementet. Detta innehåller bara info om ett dokument.
+        5e plats kommer meta elementet < meta >. Meta elementet används för att använda sig av annat metadata än det andra som head, title, link.
+        Sist av dom som ska skrivas i < head > är < title > elementet, detta används för att skriva vad man vill att ska stå för rubrik i tabben.
+        Efter man har skrivit klart sitt head element så skriver man < body >. Här kommer övrig kod och allt som ska vara med i ett html dokument.
+    </p>
+    <img src="html_element.png"></img>
+    </div>
+
+</div>
+</div>
+
+
+<div class=".container ">
+    <div class="row justify-content-center align-items-center container-flex2">
+        <h1 id="HTML">HTML</h1>
+    </div>
+
+<div class="row justify-content-center align-items-center container-flex2">
+    <p>HTML är mer eller mindre det vi kallar för World Wide Web. Allt vi kan söka efter på internet är skriver i HTML. Allt från youtube till wikipedia och grammarly är skrivet genom en Html kod.
+    HTML ger programmeraren möjlighet att skapa sin egna hemsida, dess struktur, metainformation och hur dokumentet ska visas för besökare. Allt detta kan man fixa själv. Man kan göra lite vad man vill i en HTML fil.
+    Till exempel så är denna hemsida gjord i HTML, det tillåter användaren koppla externa hemsidor till din enga webplats, lägga upp bilder, skriva texter, allt man önskar på en hemsida går o göra i python.  
+    </p>
+    <img src="HTML.jpeg" height="400px"></img>
+
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex3">
+        <h1 id="ID">ID</h1>
+    </div>
+
+<div class="row justify-content-center align-items-center container-flex3">
+    <p> Ett ID attribut är det som visar eller pekar på en specifk rad eller kod eller grej i ett html dokument. ID attriputet måste vara med i dokumentet annars kommer det inte att göra någonting
+        Navbaren jag gjort i denna webplats använder sig av id attributet, varje gång man klickar på ett av rubrikerna så kommer man skrolla ner dit direkt. 
+        Såhär kan du använda ID attributet: först skriver du < a >, i denna kommer href="" komma upp, där skriver du # och vad du vill att id attributet ska heta. t.ex < a href="#åsna" > åsna < /a >.
+        När du vill använda IDet så skriver du t.ex < h1 id="åsna"> < /h1 > 
+    </p>
+    <img src="ID.png" height="300px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex1">
+        <h1 id="class">class</h1>
+    </div>
+
+<div class="row justify-content-center align-items-center container-flex1">
+    <p>
+        Class attributet används för det mesta för att kunna använda inställningar man skrivit i en stylesheet eller i < style >, här har jag för det mesta använt mig av bootstrap. Jag har en vanlig style.css som jag använt för att texten ska vara centrerad coh vara i mitten av sidan.
+        Du använder class attributet genom att skriva det efter en div eller span eller h tagg eller vad man känner att behöver lite förändring eller styling. Du skriver class="", mellan "" skriver du in det attributet som du skrivit i din style.css eller som jag har gjort, kolla i bootstrap och skriv in den rubriken, t.ex class=".container".
+        För det mesta är 
+    </p>
+    <img src="class.png" height="300px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex4">
+        <h1 id="responsive">responsive</h1>
+    
+    </div>
+<div class="row justify-content-center align-items-center container-flex4">
+    <p>
+        Responsive är en blandning mellan HTML och CSS för att kombinerat göra en webplats som ser bra ut på alla sorters enhter. 
+        Detta betyder att hemsidan kommer att ändra på sin bredd, hur texten är upplagt, storleken på allt, bli större, mindre, vad som helst sålänge det får plats på enhetens skärm och ser bra ut.
+        För att skapa en responsiv hemsida så ska man lägga till < meta name="viewport" content="width=device-width, initial-scale=1.0" > i < head > på hemsidan. Efter det kan du skriva
+        t.ex < img src="h_taggar.png" style="width:100%;" >. Då kommer bilden att bli större och mindre beroende på enheten. 
+    </p>
+    <img src="responsive.png" height="300px"></img>
+
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex5">
+        <h1 id="http">http</h1>
+    </div>
+
+<div class="row justify-content-center align-items-center container-flex5">
+    <p>
+        HTTP är motsatsen till HTTPS. De är mer eller mindre lika i alla aspekter förutom säkerhet, Det är det "S"ett står för. Det betyder secure, detta innebär att alla hemsidor/webplatser som har https i sin URL är säkra platser. 
+        HTTP är osäkra hemsidor, jag tipsar att man ska hålla sig borta från de då man inte vet vad man kan få på datorn tack vare dom. Anledningen till att http inte är så säkert är att
+        en client skickar en förfrågan till servern, servern skickar då ett svar tillbaka till clienten. Detta svaret kan tillochmed innehålla informationen som clienten bad om. 
+    </p>
+    <img src="http.jpg" height="200px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex7">
+        <h1 id="https">https</h1>
+    </div>
+<div class="row justify-content-center align-items-center container-flex7">
+    <p>
+        Som jag tidigare berätta så är https den säkrare varianten av http, kolla efter de i början av URLen genom att trycka på den en gång. Sättet https fungerar är genom att koppla upp dig till nätet med en kryptering
+        genom Transport Layer Security(TLS) eller Secure Sockets Layer. TLS fungerar på så vis att den genererar en ny nyckel för varje uppkoppling för att hålla dina privacy and integrity säkra. 
+        En del skillnader mellan http och https är att https använder port 443 som standard medan http använder port 80 som standard. HTTPS krypterar förfrågan och svar så att om du skulle vara spionerad
+        så skulle de mer eller mindre bara se din ip-adress och ursprung. 
+    </p>
+    <img src="https.png" height="100px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex8">
+        <h1 id="compressed data">compressed data</h1>
+    </div>
+
+<div class="row justify-content-center align-items-center container-flex8">
+    <p>
+    Att komprimmera data är väldigt viktigt och bra för en webplats då det sänker bandwith kapaciteten som behövs betydligt och ger bättre prestanda för hemsidan. 
+    Man behöver inte komprimmera data på egen hand eller lägga till en komprimmerings mekanism då servern och browser själv tar hand om detta då det ligger inbäddat i systemet.
+    Det finns 3 olika nivåer som komprimmering sker på, först är att filer blir komprimmerade med olika vädligt specifika metoder. Efter det blir filarna krypterade på http nivån och sedan kan 
+    komprimmeringen användas på anslutnings nivå.
+    </p>
+    <img src="compression.png" height="200px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex9">
+        <h1 id="CDN">CDN</h1>
+    </div>
+<div class="row justify-content-center align-items-center container-flex9">
+    <p>
+        CDN står för Content Delivery Network och består av proxy servrar och deras datorhallar. Stora företag som Facebook, twitter, google, amazon, alla dom stora webplatserna har sina egna CDN. Anledningen till det är för att det ger minskad latens, ökad prestanda 
+        och gör att webplatserna är säkrare att driva. Det som menas med högre prestanda är att servrar arbetar tillsammans för att öka hastigheten på internets innehåll.
+    </p>
+    <img src="cdn.jpg" height="200px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex10">
+        <h1 id="local bootstrap">local bootstrap</h1>
+    </div>
+<div class="row justify-content-center align-items-center container-flex10">
+    <p>
+        local bootrstrap är en fil man laddar ner från bootstrap hemsidan. Denna fillen har all CSS kod man behöver för att göra en komplett hemsida från start till slut. 
+        Denna webplatsen är gjord med hjälp av local bootsrap. Man länkar bootstrap genom att skriva < link rel="stylesheet" href="bootstrap hemsida/bootstrap.css" > innanför head elementet.
+    </p>
+    <img src="boot.png" height="200px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex11">
+        <h1 id="JQuery">JQuery</h1>
+    </div>
+<div class="row justify-content-center align-items-center container-flex11">
+    <p>
+        JQuery är ett javascript bibliotek som gör det lättare att använda javascript på webplatsen och funkar genom att sätta ihop flera linjer av kod till olika metoder som du kan använda genom en kod,
+        JQuery innehåller följande funktioner: HTML/DOM manipulation, CSS manipulation, HTML event metoder, effecter, animationer, AJAX ovh Utilities.
+    </p>
+    <img src="jquery.png" height="200px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex12">
+        <h1 id="flexbox">flexbox</h1>
+    </div>
+<div class="row justify-content-center align-items-center container-flex12">
+    <p>
+        Flexbox är en välidgt användbar funktion när det kommer till hemisdor, jag tror nog att de flesta om inte ala shoppingsidor använder sig av Flexbox för att kunna sätta upp flera bilder
+        bredvid varandra och på så vis göra en rad med bilder. Man använder även flexbox för att göra navigation bars. Du skapar en felxbox i din CSS genom att mer eller mindre copy pastea från en hemsida som t.ex. w3schools, efter det kan du ändra lite hur du vill i CSSen så att den matchar din smak.
+    </p>
+    <img src="flex.png" height="500px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex13">
+        <h1 id="grid">grid</h1>
+    </div>
+<div class="row justify-content-center align-items-center container-flex13">
+    <p>
+        Grid är ett sätt att sätta upp innehållet i hemsidan. Man gör en grid genom att skriva < div class="grid-tiem" > då hamnar den itemen i en grid. w3schools har några olika variationer på grids, där kan man kolla på koderna
+        och skriva av de, sen kan man ändra till exempel avståndet mellan varje grid genom att skriva i .grid-container som ska vara i en CSS "grid-gap: 150px;" då kommer det vara 150 pixlar mellan gridsen.
+    </p>
+    <img src="grid.jpg" height="200px"></img>
+</div>
+</div>
+
+
+
+<div class=".container">
+    <div class="row justify-content-center align-items-center container-flex14">
+        <h1 id="code snippets">code snippets</h1>
+    </div>
+<div class="row justify-content-center align-items-center container-flex14">
+    <p>
+        En code snippet eller HTML snippet är en liten del av en source kod i HTML. Code snippets kan man hitta på till exempel w3school eller catswhocode. Om man behöver en navigation bar eller en 
+        dropdown menu eller annat så kan man hitta det där. Man letar efter en rubrik på hemsidan där det står t.ex. skill bars, klickar på learn how to och så kan man abra copiera eller skriva av koden som står där.
+
+    </p>
+    <img src="snippets.png" height="500px"></img>
+</div>
+</div>
+   
+
+
+</body>
+</html>
+
+<!--Fråga herman varför jag inte kan lägga in en bild-->
